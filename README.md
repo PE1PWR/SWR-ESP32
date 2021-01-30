@@ -9,7 +9,7 @@ Gebruik in die situatie 2 weerstanden om de spanning te delen.
 
 De touch zal ingezet gaan worden om de schaal aan te kunnen passen via een setup-menu voor meer dan 100 watt.
 
-De reden dat ik een ADS1115 heb ikgezet als AD is dat de ESP32 AD een te klein bereik had die linear is. 800 t/m 2200 mv. Daarbij kwam ook naar voren dat de AD van de ESP32 heel onstabiel is. Ik heb een extra condensator toegapst om hf te scheiden van de gelijkspanning. Dit was echter niet voldoende. Dat de ADS1115 wel stabiel is moge blijken uit het feit dat er geen condensator aan de ingang is geplaast. Wat je meet zie je terug in de waarde van de berekingen.
+De reden dat er een ADS1115 (16bits) is gezet als AD omzetter is dat de ESP32 AD omzetter een te klein bereik had die linear is. 800 t/m 2200 mv (12bits). Tot 150mv en na 2200 mv is het gedaan met linear. Daarbij kwam ook naar voren dat de AD van de ESP32 heel onstabiel is. Ik heb een extra condensator toegapst om hf te scheiden van de gelijkspanning. Dit was echter niet voldoende. Dat de ADS1115 wel stabiel is blijkt uit het feit dat er geen condensator aan de ingang is geplaast. Hij is behoorlijk linear over een groter bereik. Dit is wat je terug in de waarde van de berekingen en de uitwerking op het display. Het is heel rustig en stabiel.
 
-De formule die is toegepast VSWR= 1+(Pref/Pfwd) /  1−(Pref/Pfwd)
-In de prorgammering kun je zelf de schaal aanpassen en ijken.
+De formule die is toegepast voor de SWR berekening VSWR= 1+(Pref/Pfwd) /  1−(Pref/Pfwd)
+In de prorgammering kun je zelf de schaal aanpassen en ijken als het nodig is.
