@@ -14,5 +14,5 @@ De reden dat er een ADS1115 (16bits) is ingezet als AD omzetter komt doordat de 
 De formule die is toegepast voor de SWR berekening VSWR= 1+(Pref/Pfwd) /  1−(Pref/Pfwd)
 In de prorgammering kun je zelf de schaal aanpassen en ijken als het nodig is.
 
-Let op het ontwerp is getest met 5 volt. Als je een batterij wilt gebruiken van 3.7 volt zet er dan een omzetter naar 5 volt is. Mocht er na gebruik van een 5v module de waardes verlopen kun je deze zelf aanpassen in de code. 
+Let op het ontwerp is getest met USB 5 volt. In de praktijk zal dit rond 4.5V zijn.  Als je een batterij wilt gebruiken van 3.7 volt zet er dan een omzetter naar 5 volt is. Mocht er na gebruik van een 5v module de waardes verlopen kun je deze zelf aanpassen in de code. 
 Zal zelf een test uitvoeren om het verloop te controleren. Mocht dit zo zijn zal ik 2 codes neerzetten een voor USB 5v en een voor een batterij met 5 volt module. 
