@@ -4,9 +4,8 @@ The script was written for a TFT 3.2 320 X 240 screen. If you are going to use a
 
 There are plans to use the ESP32 to control the SWR and protect the output stage. 100 watts is the maximum power for this SWR version. A higher power is possible if you adjust the calculation and set the scale X100. Also make sure that the input voltage at the ADS1115 does not exceed 5 volts. In that situation, use 2 resistors to divide the voltage.
 
-The touch will be used to adjust the scale via a setup menu for more than 100 watts.
-
-The reason that an ADS1115 (16 bits) was used as an AD converter is because the ESP32 AD converter had too small a range that is linear. 800 to 2200 mv (12 bits). Up to 150mv and after 2200mv it is done with linearity. It also emerged that the AD of the ESP32 is very unstable. An extra capacitor used to separate HF from the DC voltage did not work. That ADS1115 is stable is shown by the fact that no capacitor is placed at the input. THE ADS1115 is quite linear over a wide range. This is what you see in the value of calculations and the effect on the display. It is very quiet and stable.
+The touch will be used to adjust the scale true a setup menu for more than 100 watts.
+The reason that an ADS1115 (16 bits) was used as an AD converter is because the ESP32 AD converter had too small a range that is linear. 800 to 2200 mv (12 bits). Up to 150mv and after 2200mv it is done with linearity. It also emerged that the AD of the ESP32 is very unstable. An extra capacitor used to separate HF from the DC voltage did not work. That ADS1115 is stable is shown by the fact that no capacitor is placed at the input. They ADS1115 is quite linear over a wide range. This is what you see in the value of calculations and the effect on the display. It is very stable.
 
 The formula used for the SWR calculation VSWR = 1+ (Pref / Pfwd) / 1− (Pref / Pfwd) In the programming you can adjust the scale yourself and calibrate it if necessary.
 
