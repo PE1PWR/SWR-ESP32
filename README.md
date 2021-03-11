@@ -1,4 +1,5 @@
-SWR ESP32 TFT3.2 The software is free to use. It is a SWR meter built with an ESP-32, ASD1115 and a tft 3.2 Touch. The touch is in the schematic but has not yet been used in this programming. Current version is 3.01 ( release V9 has a relay protection extra)
+SWR ESP32 TFT3.2 ( this project is under construction) 
+The software is free to use. It is a SWR meter built with an ESP-32, ASD1115 and a tft 3.2 Touch. The touch is in the schematic but has not yet been used in this programming. Current version is 3.01 ( release V9 has a relay protection extra)
 
 The script was written for a TFT 3.2 320 X 240 screen. If you are going to use a smaller screen, the image will not be automatically adjusted. It is intended that this is possible in the new version.
 
