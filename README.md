@@ -1,3 +1,9 @@
+Latest version V10 is made for IDE 2.3.8. Older versions V9 only works on IDE 1.8. X and lower.
+
+Adafruit has made some changes for IDE 2.3.8. Normal you can use Adafruit_ADS1115 ads (0X48) ; // AD converter module address. This wont work anymore. You have to change for a older version within IDE 2.3.8 to this Adafruit_ADS1115 ads;
+
+(0X48) is not necessary anymore
+
 SWR ESP32 TFT3.2 ( this project is under construction) 
 
 The software is free to use. It is a SWR meter built with an ESP-32, ASD1115 and a tft 3.2 Touch. The touch is in the schematic but has not yet been used in this programming. Current version is 3.01 ( release V9 has a relay protection extra)
